@@ -27,6 +27,8 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  // migrate: 'alter'
+  // TN modification - telling sails not to alter any data
+  // in the database. I will do it myself.
+  migrate: 'safe'
 
 };

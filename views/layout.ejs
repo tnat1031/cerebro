@@ -29,11 +29,43 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
-    <%- body %>
+
+    <!-- navbar code -->
+    <nav class="navbar navbar-inverse">
+      <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+    </nav>
+
+    <!-- a little breathing room -->
+    <div style="height: 25px"></div>
+
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 container theme-showcase" role="main">
+
+        <!-- body content will be pulled in here from ejs templates -->
+        <%- body %>
+
+      </div>
+    </div>
+
+    
+
+    <!-- a little breathing room -->
+    <div style="height: 25px"></div>
+
+    <!-- footer code -->
+    <div class="col-xs-10 col-xs-offset-1">
+      <hr>
+      <small>
+        <p class="text-right">Manage your badass comic collection with cerebro</p>
+      </small>
+    </div>
+
 
 
 
@@ -59,6 +91,7 @@
     -->
 
     <!--TEMPLATES-->
+    
     <!--TEMPLATES END-->
 
 
@@ -86,6 +119,9 @@
     -->
 
     <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/jquery-3.1.0.js"></script>
+    <script src="/js/bootstrap.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
