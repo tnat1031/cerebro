@@ -48,9 +48,4 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
-
-  ComicController: {
-    // must be logged in before you can view any comics
-    '*': 'sessionAuth'
-  }
 };

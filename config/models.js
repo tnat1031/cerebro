@@ -27,10 +27,6 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  migrate: 'safe',
-  
-  // whether to enforce attribute definitions
-  // defined in api/models/*.js
-  schema: true
+  // migrate: 'alter'
 
 };
